@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.main_wrapper {
+    margin: 0 10px;
+    background: seashell;
+}
+
+.wrap_header,
+.wrap_header > div,
+.content,
+.nav,
+.bath_section,
+.store_and_tools,
+.store_and_tools > div,
+.bath_section_intro,
+.bath_section_intro > div,
+.type_of_baths,
+.type_of_baths > div,
+.footer {
+    border: 1px solid silver;
+}
+
+.wrap_header {
+    height: 70px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.header {
+    width: 80%
+}
+
+.content {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.nav {
+    width: 20%;
+    height: 300px;
+}
+
+.bath_section {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bath_section_intro,
+.type_of_baths {
+    display: flex;
+}
+
+.bath_section_intro > div {
+    height: 150px;
+}
+
+.bath_section_intro > div:first-child,
+.type_of_baths > div:first-child {
+    width: 70%;
+}
+
+.bath_section_intro > div:last-child,
+.type_of_baths > div:last-child {
+    width: 30%;
+}
+
+.type_of_baths > div {
+    height: 300px;
+}
+
+.store_and_tools {
+    width: 20%;
+    height: 155px;
+}
+
+.store_and_tools > div {
+    height: 50%;
+}
+
+.footer {
+    height: 70px;
+}
+
+@media screen and (max-width: 570px) {
+    .bath_section {
+        position: static;
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .store_and_tools {
+        width: 100%;
+    }
+
+    .type_of_baths {
+        flex-direction: column;
+    }
+
+    .type_of_baths > div:first-child {
+        width: 100%;
+    }
+
+    .type_of_baths > div:last-child {
+        width: 100%;
+    }
+
+    .store_and_tools {
+        display: flex;
+    }
+
+    .store_and_tools > div {
+        width: 50%;
+        height: 100%;
+    }
+}

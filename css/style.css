@@ -1,0 +1,177 @@
+.chapter_1 {
+    width: 100%;
+    min-height: 600px;
+    background: silver;
+    border: 1px solid #807f7f;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+div {
+    border: 1px solid #626161;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.block_a,
+.block_b,
+.block_c {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/*Block A*/
+
+.block_a {
+    background-color: beige;
+}
+
+.block_a__header {
+    width: 100%;
+}
+
+.block_a__content {
+    width: 100%;
+    display: flex;
+}
+
+.block_a__header {
+    height: 50px;
+}
+
+.block_a__content > div {
+    height: 70px;
+}
+
+.block_a__content > div:nth-child(1) {
+    width: 70%;
+}
+
+.block_a__content > div:nth-child(2) {
+    width: 30%;
+}
+
+@media screen and (max-width: 890px) {
+    .block_a__content {
+        flex-direction: column;
+    }
+
+    .block_a__header {
+        height: 20px;
+    }
+
+    .block_a__content > div:nth-child(2) {
+        height: 30px;
+    }
+
+    .block_a__content > div:nth-child(1) {
+        width: 100%;
+    }
+
+    .block_a__content > div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+/*Block B*/
+
+.block_b {
+    background: aliceblue;
+}
+
+.block_b__header {
+    width: 100%;
+    height: 50px;
+}
+
+.block_b__content {
+    width: 100%;
+    display: flex;
+}
+
+.block_b__wrap {
+    width: 70%;
+}
+
+.block_b__wrap_b {
+    height: 50px;
+}
+
+.block_b__wrap_cde {
+    display: flex;
+}
+
+.block_b__wrap_cde > div {
+    width: 33.3%;
+    height: 40px;
+}
+
+.block_b__footer {
+    width: 30%;
+}
+
+@media screen and (max-width: 890px) {
+    .block_b__content {
+        flex-direction: column;
+    }
+
+    .block_b__wrap {
+        width: 100%;
+    }
+
+    .block_b__footer {
+        width: 100%;
+        height: 30px;
+    }
+}
+
+/*Block C*/
+
+.block_c {
+    background: aqua;
+}
+
+.block_c__header {
+    width: 100%;
+    height: 50px;
+}
+
+.block_c__content {
+    width: 100%;
+    display: flex;
+}
+
+.block_c__wrap {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block_c__wrap > div {
+    width: 33%;
+    height: 50px;
+}
+
+.block_c__footer {
+    width: 30%;
+}
+
+@media screen and (max-width: 890px) {
+    .block_c__content {
+        flex-direction: column;
+    }
+
+    .block_c__wrap {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .block_c__wrap > div {
+        width: 33%;
+    }
+
+    .block_c__footer {
+        width: 100%;
+        height: 30px;
+    }
+}
